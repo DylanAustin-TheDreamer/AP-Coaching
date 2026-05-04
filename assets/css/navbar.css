@@ -1,0 +1,10 @@
+.custom-navbar{
+    padding: 15px;
+    background-color: black;
+    border-radius: 50%, 50%, 0, 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 200% 200%;  /* extremely squished */
+    min-height: 5px;
+}

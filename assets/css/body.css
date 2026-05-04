@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: "Outfit", sans-serif;
+}
+.titles{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    text-shadow: rgba(0, 0, 0, 1);
+    letter-spacing: -1px;
+}
+.titles span{
+    color: rgb(124, 184, 90);
+}
+.info-container{
+    text-align: start;
+    padding: 10px;
+    max-width: 450px;
+    font-size: larger;
+}
+.custom-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px;
+}
+.form-container{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+form{
+    width: 600px;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    padding-right: 30px;
+}
+
+.select-wrapper i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+}

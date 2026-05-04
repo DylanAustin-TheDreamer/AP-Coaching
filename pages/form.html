@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Coaching</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/body.css">
+    <link rel="stylesheet" href="../assets/css/hero.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/sections.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/responsive_images.css">
+    <link rel="stylesheet" href="../assets/css/responsive_elements.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body style="background-color: rgb(232, 235, 236); overflow-y: hidden;">
+    <header class="custom-navbar">
+        <p class="titles" style="color: white; margin-top: 10px;"><em><span>AP</span> COACHING</em>
+    </header>
+    
+    <main>
+        <section id="hero">
+
+        </section>
+        <section class="light-background">
+            <div class="container">
+                <div class="form-container">
+                    <form id="lead-form">
+                        <div class="mb-3">
+                            <label for="first-name" class="form-label" required>First Name <span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" id="first-name" name="first-name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="last-name" class="form-label" required>Last Name <span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" id="last-name" name="last-name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label" required>Email <span style="color: red;">*</span></label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service <span style="color: red;">*</span></label>
+                            <div class="select-wrapper">
+                                <select required class="form-control" id="service" name="service">
+                                    <option></option>
+                                    <option>Fitness Plan</option>
+                                    <option>E-Book</option>
+                                </select>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="instagram" class="form-label">Intagram Handle</label>
+                            <input type="text" class="form-control" id="instagram" name="instagram" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                        <div id="loader" class="spinner" style="display: none;">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer style="margin-top: 130px;">
+        <nav class="container">
+            <a href="#" target="_blank" class="footer-link" style="font-size: large !important;">Privacy Policy</a>
+            <a href="#" target="_blank" class="footer-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank" class="footer-link"><i class="fa-brands fa-square-facebook"></i></a>
+        </nav>
+    </footer>
+    <div style="background-color: black; height: 150px;">
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("lead-form").addEventListener("submit", function (event) {
+                event.preventDefault(); // stop page refresh
+                submitForm();           // call your function
+            });
+        });
+    </script>
+
+</body>
+</html>

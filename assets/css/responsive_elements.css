@@ -1,0 +1,11 @@
+@media (min-width: 849px) {
+    .custom-row{
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding: 10px;
+        gap: 10px !important;
+    }
+}
+@media (max-width: 500px){
+    
+}
