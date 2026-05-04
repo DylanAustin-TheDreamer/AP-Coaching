@@ -1,3 +1,10 @@
 .video-container{
     
 }
+.fade{
+    opacity: 0;
+    transition: opacity ease-in-out 1.6s;
+}
+.fade.visible{
+    opacity: 1;
+}

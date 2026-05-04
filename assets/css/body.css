@@ -57,3 +57,22 @@ form{
     pointer-events: none;
     color: #666;
 }
+.btn-secondary{
+    background-color: rgb(39, 39, 39);
+}
+.em-span{
+    color: rgb(124, 184, 90);
+}
+
+/* EXTRAS */
+.confirmation{
+    text-align: center;
+    padding: 25px;
+    border: 1px  rgb(124, 184, 90) solid;
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: rgb(222, 225, 226);
+}
+.confirmation p{
+    font-size: large;
+}

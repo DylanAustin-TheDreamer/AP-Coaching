@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const service = document.getElementById("service").value;
         const instagram = document.getElementById("instagram").value.trim();
 
+        const honeypot = document.getElementById("company").value;
+
+        if (honeypot) {
+            return;
+        }
         if (!email.includes('@')) return;
         if (!service) return;
         if (firstName.length < 2 || lastName.length < 2) return;
@@ -19,11 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const res = await fetch("https://script.google.com/macros/s/AKfycbyNknKKh5sSvoPNltrD3J4hfgqJhR78V09q84Who-HiSBJ4qge5xuhnzDXA9M3uWUqg/exec", {
                 method: "POST",
                 body: JSON.stringify({
-                    firstname: firstName,
-                    lastName: lastName,
-                    email: email,
-                    service: service,
-                    instagram: instagram
+                    firstName,
+                    lastName,
+                    email,
+                    service,
+                    instagram
                 })
             });
 
@@ -32,6 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
         } catch (err) {
             console.error("Submission failed:", err);
         }
+
+        let page;
+        if(document.getElementById("service").value === "E-Book"){
+            page = "https://tally.so/r/3jAEyY"
+        } else page = "../pages/confirmation.html"
         document.getElementById("first-name").value = "";
         document.getElementById("last-name").value = "";
         document.getElementById("email").value = "";
@@ -39,6 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("instagram").value = "";
         btn.innerHTML = "Send Message";
         btn.disabled = false;
+
+        if(page === "https://tally.so/r/3jAEyY") {
+            window.open(page);
+        } else window.location = page;
+        window.open(page);
     }
 
     // 🔥 Attach event HERE instead of HTML

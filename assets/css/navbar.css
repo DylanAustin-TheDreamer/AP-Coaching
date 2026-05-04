@@ -1,10 +1,21 @@
 .custom-navbar{
     padding: 15px;
-    background-color: black;
+    background-color: rgb(39, 39, 39);
     border-radius: 50%, 50%, 0, 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0 0 200% 200%;  /* extremely squished */
     min-height: 5px;
+}
+.custom-navbar-home{
+    padding: 15px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 200;
 }
