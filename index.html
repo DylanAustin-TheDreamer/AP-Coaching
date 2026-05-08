@@ -31,7 +31,9 @@
             </video>
             <div class="hero-content">
                 <!-- Your content here -->
-                 <video autoplay muted loop src="https://res.cloudinary.com/dcos20qus/video/upload/v1778104735/044c40cf1594f4bd433815d7c5ac5d7e.mp4" style="user-select: none; pointer-events: none; -webkit-user-select: none"></video>
+                 <video autoplay muted loop style="user-select: none; pointer-events: none; -webkit-user-select: none" class="hero-video-middle">
+                    <source src="https://res.cloudinary.com/dcos20qus/video/upload/v1778104735/044c40cf1594f4bd433815d7c5ac5d7e.mp4" type="video/mp4">
+                 </video>
                  <div class="hero-text">
                     <p class="titles" style="color: white; font-size: 70px;">AP <span>COACHING</span></p>
                 </div>
@@ -72,7 +74,9 @@
                         <p class="titles" style="line-height: 25px !important;">HAVE TO SAY...</p>
                     </div>
                     <div class="video-container">
-                        <video poster="https://res.cloudinary.com/dcos20qus/image/upload/v1778104606/7fa3c9530d62a54f479027438f8babfa.webp" controls src="https://res.cloudinary.com/dcos20qus/video/upload/v1778104742/d613a67fcc13bc2c27042625e955f7e8.mp4"></video>
+                        <video poster="https://res.cloudinary.com/dcos20qus/image/upload/v1778104606/7fa3c9530d62a54f479027438f8babfa.webp" controls class="playable-video">
+                            <source src="https://res.cloudinary.com/dcos20qus/video/upload/v1778104742/d613a67fcc13bc2c27042625e955f7e8.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -194,7 +198,9 @@
                         <a href="https://ig.me/j/Abaz-_Y9tyFWIm-2/" class="btn btn-lg btn-secondary" target="_blank"><span class="em-span">AP</span> COMMUNITY - <span class="em-span">JOIN</span> NOW</a>
                     </div>
                     <div class="video-container">
-                        <video poster="https://res.cloudinary.com/dcos20qus/image/upload/v1778104606/7fa3c9530d62a54f479027438f8babfa.webp" src="https://res.cloudinary.com/dcos20qus/video/upload/v1778104734/97e8070bc004d3469c965f541b2e38f0.mp4" style="width: 100%;" controls></video>
+                        <video poster="https://res.cloudinary.com/dcos20qus/image/upload/v1778104606/7fa3c9530d62a54f479027438f8babfa.webp" style="width: 100%;" controls class="playable-video">
+                            <source src="https://res.cloudinary.com/dcos20qus/video/upload/v1778104734/97e8070bc004d3469c965f541b2e38f0.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -211,6 +217,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="assets/js/observer.js"></script>
+    <script src="assets/js/videohandler.js"></script>
     <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
