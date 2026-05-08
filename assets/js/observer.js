@@ -11,7 +11,7 @@ addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {
-        threshold: 0.20,     // Trigger when 25% of the element is visible
+        threshold: 0.15,     // Trigger when 25% of the element is visible
         rootMargin: '0px',   // Extra space around the viewport (like CSS margin)
         root: null           // null = use the window viewport
     });
