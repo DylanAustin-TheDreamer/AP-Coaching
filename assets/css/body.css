@@ -23,6 +23,19 @@ p{
     max-width: 450px;
     font-size: larger;
 }
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.image-container img{
+    width: 50%;
+    height: 400px;
+    object-fit: cover;  /* crops to fill the container */
+    object-position: center;
+    display: block;
+}
 .custom-row{
     display: flex;
     flex-direction: column;
