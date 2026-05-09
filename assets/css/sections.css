@@ -34,7 +34,7 @@
     height: 720px;
     object-fit: cover;  /* crops to fill the container */
     object-position: top;
-    display: block;
+    display: none;
 }
 .hero-content .hero-text{
     position: absolute;

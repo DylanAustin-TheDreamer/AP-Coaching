@@ -1,6 +1,9 @@
-@media (min-width: 915px){
+@media (min-width: 992px){
     #hero{
         background: linear-gradient(90deg,rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 1) 40%,rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 0.1) 100%);
+    }
+    .hero-content > video{
+        display: block;
     }
 }
 @media (min-width: 849px) {
