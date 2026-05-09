@@ -1,0 +1,10 @@
+/* iOS-specific fixes */
+video {
+    -webkit-touch-callout: none;
+}
+
+.hero-video,
+.hero-video-middle {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
