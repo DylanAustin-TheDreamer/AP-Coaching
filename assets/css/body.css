@@ -15,7 +15,7 @@ p{
     letter-spacing: -1px;
 }
 .titles span{
-    color: rgb(90, 150, 56);
+    color: rgb(94, 177, 47);
 }
 .info-container{
     text-align: start;
@@ -88,4 +88,31 @@ form{
 }
 .confirmation p{
     font-size: large;
+}
+.whatsapp-bubble {
+    position: fixed;
+    bottom: 20px;           /* Distance from bottom - adjust as needed */
+    right: 20px;            /* Distance from right - adjust as needed */
+    z-index: 1000;          /* Ensures it appears above other content */
+    width: 60px;            /* Adjust size */
+    height: 60px;
+    border-radius: 50%;     /* Makes it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e9e9;  /* WhatsApp green */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-bubble:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-bubble a {
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+    margin-bottom: 3.5px;
 }
