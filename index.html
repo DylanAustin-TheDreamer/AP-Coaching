@@ -55,7 +55,7 @@
                             Join us to redefine your journey and become the best version of yourself. </p>
                             <div class="d-flex justify-content-evenly">
                                 <a class="btn btn-lg btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSePxXYfsn0dop8Tl2JZH8qgBJfVb6bqYam2jcfh_HwIWT5bXA/viewform" target="_blank">Contact</a>
-                                <a class="btn btn-lg btn-secondary" href="#freebies">Freebies!</a>
+                                <a class="btn btn-lg btn-secondary" id="freebies-button">Freebies!</a>
                             </div>
                     </div>
                     <div class="image-container">
@@ -218,6 +218,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="assets/js/observer.js"></script>
     <script src="assets/js/videohandler.js"></script>
-    <script async src="//www.instagram.com/embed.js"></script>
+    <script>
+        addEventListener("DOMContentLoaded", () => {
+            const freebiesButton = document.getElementById("freebies-button")
+
+            freebiesButton.addEventListener("click", () => {
+                const freebiesSection = document.getElementById("freebies")
+                freebiesSection.scrollIntoView({ behavior: 'smooth' })
+            })
+        })
+    </script>
 </body>
 </html>
